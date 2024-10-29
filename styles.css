@@ -18,20 +18,21 @@ body {
     width: 90%;
     max-width: 1200px;
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 30px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .breadcrumb {
-    color: #888;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    color: #e36c3b;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
 }
 
 h1 {
     font-size: 1.8rem;
     color: #333;
+    margin-bottom: 15px;
 }
 
 .steps {
@@ -42,12 +43,15 @@ h1 {
 
 .step {
     text-align: center;
+    flex: 1;
     width: 30%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 20px;
     color: #888;
     font-weight: bold;
+    margin: 0 5px;
+    font-size: 0.9rem;
 }
 
 .step.active {
@@ -66,7 +70,7 @@ h1 {
 .order-summary {
     background: #fafafa;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     width: 48%;
 }
@@ -74,15 +78,16 @@ h1 {
 .contact-info h2,
 .order-summary h2 {
     font-size: 1.3rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #333;
 }
 
 .contact-info form label {
     display: block;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
     color: #555;
+    font-size: 0.95rem;
 }
 
 .contact-info form input,
@@ -101,10 +106,15 @@ h1 {
     border: none;
     padding: 15px;
     font-size: 1.1rem;
-    margin-top: 20px;
+    margin-top: 25px;
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
+    transition: 0.3s ease;
+}
+
+.proceed-button:hover{
+    background-color: #e65c2a;
 }
 
 .order-item {
@@ -116,7 +126,7 @@ h1 {
 }
 
 .order-item img {
-    width: 80px;
+    width: 72px;
     height: auto;
     margin-right: 15px;
     border-radius: 5px;
@@ -124,4 +134,55 @@ h1 {
 
 .item-info {
     flex-grow: 1;
+}
+
+.item-info p {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.item-options label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color:#666;
+    margin-right: 10px;
+}
+
+.item-options select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.item-quantity input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-left: 12px;
+}
+
+.order-summary-details {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;	
+}
+
+.order-summary-details p{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color:#555;
+    font-size: 0.95rem;
+}
+
+.order-summary-details strong {
+    color: #ff6b35;
+    font-size: 1.3rem;
 }

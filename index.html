@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="checkout-container">
         <h1>Checkout</h1>
-        <div class="checkout-container">
-            <div class="breadcrumb">
-                <span>Homepage</span> &gt; <span>Clothing Category</span> &gt; <span>Checkout</span>
-            </div>
+        <div class="breadcrumb">
+            <span>Homepage</span> &gt; <span>Clothing Category</span> &gt; <span>Checkout</span>
+        </div>
         <div class="steps">
             <div class="step active">1. Delivery</div>
             <div class="step">2. Payment</div>
@@ -78,3 +78,35 @@
                     </div>
                     <p class="item-price">$165.00</p>
                 </div>
+                <div class="order-item">
+                    <img src="img/berry_porsche.jpg" alt="Berry Porsche">
+                    <div class="item-info">
+                        <p class="item-name">Vintage Porsche Jacket</p>
+                        <p class="item-desc">Vintage Winter WEARS - 1975 Classic Edition</p>
+                        <div class="item-options">
+                            <label>Size</label>
+                            <select>
+                                <option>Large size</option>
+                            </select>
+                            <label>Colour</label>
+                            <select>
+                                <option>Pink</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <p class="item-price">$140.00</p>
+                </div>
+                <div class="order-summary-details">
+                    <p>Subtotal: <span>$654.00</span></p>
+                    <p>Shipping: <span>$64.00</span></p>
+                    <p>Vat, tax: <span>$64.00</span></p>
+                    <p>Total: <strong>$778.00</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
