@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="checkout-container">
-        <div class="breadcrumb">
-            <span>Homepage</span> &gt; <span>Clothing Category</span> &gt; <span>Checkout</span>
-        </div>
         <h1>Checkout</h1>
+        <div class="checkout-container">
+            <div class="breadcrumb">
+                <span>Homepage</span> &gt; <span>Clothing Category</span> &gt; <span>Checkout</span>
+            </div>
         <div class="steps">
             <div class="step active">1. Delivery</div>
             <div class="step">2. Payment</div>
@@ -31,7 +31,7 @@
                     <input type="email" placeholder="Your email@gmail.com">
 
                     <label>Phone Number</label>
-                    <input type="tel" placeholder="+1-(0000 000 0000)">
+                    <input type="tel" placeholder="+55 (55) 55555-5555">
                     
                     <h2>Delivery Information</h2>
                     
@@ -53,3 +53,28 @@
                     <button type="button" class="proceed-button">Proceed to Payment</button>
                 </form>
             </div>
+            <div class="order-summary">
+                <h2>Your Order</h2>
+                
+                <div class="order-item">
+                    <img src="img/jaqueta_ferrari.jpg" alt="Jaqueta Ferrari">
+                    <div class="item-info">
+                        <p class="item-name">Vintage Ferrari Jacket</p>
+                        <p class="item-desc">Vintage Highschool Jock Bully - 1960 Classic Edition</p>
+                        <div class="item-options">
+                            <label>Size</label>
+                            <select>
+                                <option>Medium size</option>
+                            </select>
+                            
+                            <label>Colour</label>
+                            <select>
+                                <option>Red</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <p class="item-price">$165.00</p>
+                </div>
