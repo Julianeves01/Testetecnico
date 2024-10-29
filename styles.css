@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
@@ -68,8 +67,7 @@ h1 {
 
 .contact-info,
 .order-summary {
-    background: #fafafa;
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     padding: 25px;
     border-radius: 8px;
     width: 48%;
@@ -185,4 +183,8 @@ h1 {
 .order-summary-details strong {
     color: #ff6b35;
     font-size: 1.3rem;
+}
+
+p.item-nome{
+    font-weight: bold;
 }
